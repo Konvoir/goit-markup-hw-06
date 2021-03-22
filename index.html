@@ -357,6 +357,7 @@
 
     <footer class="foot">
       <div class="ctn">
+
         <div class="adress-conteiner">
           <a class="logo bottom" href="#hero"
             >Web<span class="logo-S">Studio</span>
@@ -369,6 +370,7 @@
             <a class="adress link" href="tel:+380961111111">+38096111 11 11</a>
           </address>
         </div>
+
         <div class="social-links">
           <p class="social-links-text">присоединяйтесь</p>
           
@@ -403,36 +405,80 @@
             </li>
           </ul>
 
+        </div> 
+
+        <div class="sing">
+          <form>
+            <label class="sing-label">
+              Подпишитесь на рассылку
+              <input type="email" name="email" 
+              placeholder="E-mail"
+              />
+            </label>
+          </form>
         </div>
+
       </div>
       </footer>
     
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
+
         <form class="form">
           <p class="form__text">Оставьте свои данные, мы вам перезвоним</p>
-          <label for="username">Имя</label>
+          
+          <ul class="form__list">
+
+            <li class="form__item">
+              <label for="username">Имя</label>
             <div class="form-input__wraper">
-              <input type="text" name="name" id="username">
+              <input type="text" name="name" id="username" autofocus >
+              <svg class="form-icon" width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-person"></use>
+              </svg>
             </div>
-          <label for="tel">Телефон</label>
+            </li>
+
+            <li class="form__item">
+              <label for="tel">Телефон</label>
             <div class="form-input__wraper">
               <input type="text" name="tel" id="tel">
+              <svg class="form-icon" width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
             </div>
-          <label for="mail">Почта</label>
+            </li>
+
+            <li class="form__item">
+              <label for="mail">Почта</label>
             <div class="form-input__wraper">
               <input type="text" name="mail" id="mail">
-            </div>  
-          <label for="mail">Почта</label>
-            <div class="form-input__wraper">
-              <input type="text" name="email" id="email">
-            </div> 
-            <button type="submit">Отправить</button>
-                  </form>
-          <div class="checkbox">
-            <input type="checkbox" name="" id="">
-          </div>
+              <svg class="form-icon" width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
+            </li>
+
+            <li class="form__item">
+              <label for="comment">Комментарий</label>
           
+            <textarea class="textarea" name="comment" id="comment" rows="10"
+            placeholder="Введите текст" ></textarea>
+            </li>
+          </ul>
+         </form>
+
+
+          <div class="checkbox">
+            <label for="">
+              <input type="checkbox" name="" id="">
+              <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю 
+                <a class="checkbox-link" href="#">Условия договора</a>
+              </span>
+
+            </label>
+          </div>
+          <button class="submit" type="submit">Отправить</button>
             <div></div>
 
 
