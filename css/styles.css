@@ -396,7 +396,7 @@ a.link:hover::before {
   }
 
 
-.teamate-networks:not(:last-child) {
+.teamate-network-item:not(:last-of-type) {
   margin-right: 10px;
 }
 
@@ -583,6 +583,10 @@ fill: var(--herotext);
 
 /* footer__sing */
 
+.sing {
+  margin-left: 93px;
+}
+
 .sing__button {
   /* position: relative; */
   font-size: 16px;
@@ -594,20 +598,44 @@ fill: var(--herotext);
   padding: 10px 29px;
   display: flex;
   align-items: center;
-  
+  justify-content: center;
+  margin-left: 12px;
 }
 
 .sing__icon {
   /* position: absolute; */
-  top: 50%;
+  /* top: 50%; */
   right: 28px;
-  transform: translateY(-50%);
-
+  /* transform: translateY(-50%); */
+  color: rgb(255, 255, 255) ;
+  margin-left: 10px;
 }
 
 .sing-label {
   color: var(--herotext);
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
 }
+
+.sing__wraper {
+  display: inline-flex;
+}
+
+.sing__input {
+  background-color: var(--background-hero);
+  border: rgba(255, 255, 255, 0.3) 1px solid;
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+}
+
+
+
 
 /* h2 - section title */
 
