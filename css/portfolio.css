@@ -42,7 +42,7 @@
   overflow: hidden;
 }
 
-.button-menu {
+.button--menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +53,7 @@
   margin-bottom: 50px;
 }
 
-.button-menu li:not(last-of-type) {
+.button--menu li:not(last-of-type) {
   margin-right: 8px;
 }
 
@@ -94,14 +94,14 @@
   margin-top: calc(-1 * var(--card-set-gap)); */
 }
 
-.exampl-el {
+.exampl__el {
   max-width: 370px;
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.example-link {
+.example__link {
   display: block;
   transition: box-shadow 250ms var(--bazier);
 }
